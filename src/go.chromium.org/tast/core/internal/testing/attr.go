@@ -1168,6 +1168,11 @@ installed.
 		},
 	},
 	{
+		Name:     "bluetooth_wifi_testbed_update",
+		Contacts: []string{"chromeos-connectivity-engprod@google.com"},
+		Desc:     `The group of tests that check and update Bluetooth and WiFi peers in testbeds.`,
+	},
+	{
 		Name:     "cellular",
 		Contacts: []string{"chromeos-cellular-team@google.com"},
 		Desc:     `The group of Cellular tests to be run on hardware with a builtin Cellular modem and SIM card.`,
