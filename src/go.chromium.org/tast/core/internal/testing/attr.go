@@ -1173,6 +1173,11 @@ installed.
 		Desc:     `The group of tests that check and update Bluetooth and WiFi peers in testbeds.`,
 	},
 	{
+		Name:     "connectivity_smoke",
+		Contacts: []string{"chromeos-connectivity-engprod@google.com"},
+		Desc:     `The group of smoke tests to verify WiFi, Bluetooth, and Cellular connectivity and testbed health.`,
+	},
+	{
 		Name:     "cellular",
 		Contacts: []string{"chromeos-cellular-team@google.com"},
 		Desc:     `The group of Cellular tests to be run on hardware with a builtin Cellular modem and SIM card.`,
