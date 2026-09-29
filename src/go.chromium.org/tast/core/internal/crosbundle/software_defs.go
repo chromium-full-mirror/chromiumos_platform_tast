@@ -28,10 +28,12 @@ var softwareFeatureDefs = map[string]string{
 	"arc_launched_64bit":  `"!arc-launched-32bit-abi"`,
 	"arc_64bit_only":      `"arc-64bit-only"`,
 	// TODO(b/159325335): Remove these boards from the list when print flakes are resolved.
-	"arc_print_stable":      `!("board:jacuzzi" || "board:*-kernelnext" || "board:nautilus" || "board:dedede" || "board:octopus")`,
-	"arcvm_data_migration":  "arcvm_data_migration",
-	"arm":                   `"arm" || "arm64"`,
-	"aslr":                  "!asan", // ASan instrumentation breaks ASLR
+	"arc_print_stable":     `!("board:jacuzzi" || "board:*-kernelnext" || "board:nautilus" || "board:dedede" || "board:octopus")`,
+	"arcvm_data_migration": "arcvm_data_migration",
+	"arm":                  `"arm" || "arm64"`,
+	"aslr":                 "!asan", // ASan instrumentation breaks ASLR
+	// TODO(b/564341069): Remove after video effect not available on geralt is resolved.
+	"appearance_effect":     `!("board:geralt")`,
 	"ap_noise_cancellation": `("board:brya" || "board:nissa" || "board:skyrim" || "board:guybrush")`,
 	// Grunt has disabled HW acceleration for encoder in ARC but enabled in chrome. It leads to constant tests failure.
 	// This might be not needed when grunt gets uprev to ARC-R and support for HW acceleration.
